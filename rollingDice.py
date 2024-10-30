@@ -8,6 +8,7 @@ while x in range(roll_number) and roll != 'e':
     number = random.randint(1,sides)
     print('The result: ', number)
 
+    #the dice sides 
     if number == 1:
         print("[-----]")
         print("[     ]")
@@ -45,15 +46,5 @@ while x in range(roll_number) and roll != 'e':
         print("[0 0 0]")
         print("[-----]")
 
+    # r to roll again or e to exit the game
     roll = input('Press r to roll again Or e to exit> ').lower() 
-
-
-
-
-
-
-'''def inputValidation(input_string):
-    if input_string.strip() in {'1','2','3','4','5','6'}:
-        return int(input_string)
-    else:
-        print('Please enter a number from 1 to 6')'''

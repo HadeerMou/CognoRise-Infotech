@@ -25,6 +25,10 @@ def print_board(board):
             else:
                 print(str(board[i][j]) + ' ', end='')
 
+#to print the board to be solved
+print('Soduku board: \n')
+print_board(board)
+
 #Checks if it is possible to assign a num in the empty space
 def isAllowed(board, row, col, num):
     #Checks if the same num is in the row 
@@ -80,6 +84,7 @@ def solve(board, row, col):
     return False
 
 if (solve(board, 0, 0)):
+    print('\n Solved board: \n')
     print_board(board)
 else:
     print("no solution exists")
