@@ -26,7 +26,7 @@ def print_board(board):
                 print(str(board[i][j]) + ' ', end='')
 
 #to print the board to be solved
-print('Soduku board: \n')
+print('Sudoku board: \n')
 print_board(board)
 
 #Checks if it is possible to assign a num in the empty space

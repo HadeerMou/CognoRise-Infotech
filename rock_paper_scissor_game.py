@@ -1,6 +1,6 @@
 import random
 
-print('Welcome to Rock, Paper, Scissor Game /n Game logic:/n Rock beats scissors, scissors beat paper, and paper beats rock./n Instructions:/n You will play with the computer')
+print('Welcome to Rock, Paper, Scissor Game \n Game logic:\n Rock beats scissors, scissors beat paper, and paper beats rock.\n Instructions:\n You will play with the computer')
 playAgain = 'y' #initialize the variable with this value to start looping
 userScore = 0   #variable to store user score
 computerScore = 0   #variable to store computer score
