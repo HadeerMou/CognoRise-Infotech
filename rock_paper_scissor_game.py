@@ -6,7 +6,7 @@ userScore = 0   #variable to store user score
 computerScore = 0   #variable to store computer score
 
 #the main loop of the game
-while playAgain:
+while playAgain == 'y':
     choice = ['rock', 'paper', 'scissor']
     random_index = random.randrange(len(choice))
     user = input(f'Choose one: {choice} ').lower()
@@ -28,6 +28,10 @@ while playAgain:
     elif computer == 'rock' and user == 'paper' or computer == 'paper' and user == 'scissor' or computer == 'scissor' and user == 'rock':
         print('You Win')
         userScore += 1
+
+    else:
+        print("Invalid Input")
+        playAgain = 'y'
 
     playAgain = input('Play Again? (y/n) ')
     #printing the score with the winning case
